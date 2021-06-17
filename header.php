@@ -20,7 +20,7 @@
    	<meta property="og:image" content="<?php echo $fb_image[0]; ?>" />
    	<meta property="og:url" content="<?php the_permalink() ?>"/>
 	<meta property="og:description" content="<?php echo wp_trim_words(get_post_field('post_content', $post->ID),25,"..."); ?>"/>
-    <meta property="og:site_name" content="Widecoin" />
+    <meta property="og:site_name" content="Widecoin (WCN)" />
     <meta property="og:type" content="website" />
     
     
@@ -66,6 +66,7 @@
 		<div class="mid-content clearfix">
         
         <div class="flex-box">
+		
 		<div id="site-logo">
 		<?php if ( get_header_image() ) : ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -78,9 +79,10 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation">
-        
-		<div class="menu-toggle"><?php _e( 'Menu', 'accesspress-parallax' ); ?></div>
-					
+		<div class="menu-toggle">
+								
+								<?php _e( 'Menu', 'accesspress-parallax' ); ?></div>
+									 
 			<?php 
 			$sections = of_get_option('parallax_section');
 			if((of_get_option('enable_parallax') == 1 && of_get_option('enable_parallax_nav') == 1) || (is_page_template('home-page.php') && of_get_option('enable_parallax_nav') == 1)):
@@ -121,9 +123,10 @@
 			endif; ?>
 		
 		</nav><!-- #site-navigation -->
+	    
         </div>
 		</div>
-
+		
 
 		<?php 
 		if(of_get_option('show_social') == 1):

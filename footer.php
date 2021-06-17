@@ -47,17 +47,25 @@
 		<div class="bottom-footer">
 			<div class="mid-content clearfix">
 				<div  class="copy-right">
-                	Thanks for donation either Widecoin or Bitcoin<br />
-                    Widecoin (WCN) : WcPNtDxj5UdwZ6JKb92pKFMQ43MboQ4py3<br />
-                    Bitcoin (BTC)  : 1Q7dwUgHHiHkR7fesRR7KqQGZAjH3Uss85<br />
+                	<span style="font-weight: bold;">Thanks for donation either Widecoin or Bitcoin</span><br />
+                    <span style="font-weight: bold;">Widecoin</span> (WCN) : WcPNtDxj5UdwZ6JKb92pKFMQ43MboQ4py3<br />
+                    <span style="font-weight: bold;">Bitcoin</span> (BTC)  : 1KgoViPr71NBqDzojepyt6SmSKncojwbs2<br />
+					<a href="https://widecoin.org/donation/" target="_blank"><span style="font-weight: bold;">Donation with other currencies</span></a><br/>
 					E-mail: support@widecoin.org <br />
-					&copy; <?php echo date('Y')." "; bloginfo('name'); ?>  
+					&copy; <?php echo date('Y')." "; bloginfo('name'); ?> 
 				</div><!-- .copy-right -->
-				<div class="site-info">
-					<a href="https://coinpaprika.com/coin/wcn-widecoin/" target="_blank"><img src="https://widecoin.org/wp-content/uploads/2021/05/coinpaprika_logo56x56.png"/></a>
-				<!--WordPress Theme:-->
-				<!--<a href="<?php //echo esc_url('https://accesspressthemes.com/wordpress-themes/accesspress-parallax'); ?>" title="WordPress Free Themes" target="_blank">AccessPress Parallax</a>-->
-				</div><!-- .site-info -->
+				<div class="footer-right-row">
+					
+					<div class="site-info site-info-ext-lng">
+						<?php echo do_shortcode('[gtranslate]'); ?>
+					</div>
+					<div class="site-info">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+					<div class="site-info site-info-ext-cmc">
+						<a href="https://coinpaprika.com/coin/wcn-widecoin/" target="_blank"><img src="https://widecoin.org/wp-content/uploads/2021/05/coinpaprika_logo56x56.png"/></a>
+					</div><!-- .site-info -->
+				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
