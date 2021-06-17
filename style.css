@@ -1458,7 +1458,7 @@ Main SLider
 }
 
 .slider-caption .caption-title {
-    font-size: 54px;
+    /*font-size: 54px;
     font-weight: bold;
     text-transform: uppercase;
     color: #FFF;
@@ -1466,28 +1466,43 @@ Main SLider
     margin: 0 auto 20px;
     width: 80%;
     line-height: 1.3;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);*/
+	display: none;
 }
 
 .slider-caption .caption-description {
     font-size: 24px;
     color: #FFF;
-    position: relative;
+    /*position: relative;*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-weight: 300;
-    margin: 0 auto 20px;
-    width: 70%;
+    /*margin: 0 auto 20px;*/
+    /*width: 50%;*/
 }
 
 .slider-caption .caption-description p {
     margin-bottom: 20px;
 }
-
+.btn{
+	position: relative;
+    border: 0px solid #ffffff;
+	border-radius: 10px;
+    display: inline-block;
+    line-height: 1;
+	background:#E49F02;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff !important;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+   /* min-width: 250px !important;*/
+}
 .slider-caption .caption-description a,
-.btn,
 .call-to-action a {
     position: relative;
-    border: 2px solid #ffffff;
+    border: 0px solid #ffffff;
 	border-radius: 10px;
     display: inline-block;
     line-height: 1;
@@ -1498,13 +1513,13 @@ Main SLider
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     font-size: 20px;
-    min-width: 250px !important;
+   /* min-width: 250px !important;*/
 }
 
 .slider-caption .caption-description a:hover,
 .btn:hover {
-    background: #E49F02 !important;
-    border: 2px solid #E49F02 !important;
+    /*background: #333 !important;*/
+    border: 0px solid #E49F02 !important;
     color: #FFF !important;
 }
 
@@ -2144,6 +2159,8 @@ Blog Section
 .btn-wrap {
     text-align: center;
     margin-top: 70px;
+    color: #E49F02;
+
 }
 
 .blog-list:hover .blog-excerpt span {
@@ -2162,6 +2179,8 @@ Footer Section
     background: #000;
     color: #FFF;
     font-size: 15px;
+	/*position: relative; bottom: -200px; */
+	margin: auto;
 }
 
 .top-footer {
@@ -2250,9 +2269,45 @@ Footer Section
     float: left;
 }
 
+.footer-right-column {
+  float: right;
+  width: 5%;
+}
+.footer-right-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .site-info {
    float: right;
+   
+}
+.site-info-ext-lng {
+   margin-top:30px;
+}
+
+.site-info-ext-cmc {
+    margin-top:20px;
+}
+
+
+.footer-rinfo1 {
+   float: right;
    padding-top: 20px;
+   padding-right:10px;
+   padding-left:10px;
+}
+.footer-rinfo2 {
+   float: right;
+   padding-top: 20px;
+   padding-right:10px;
+   padding-left:10px;
+}
+.footer-rinfo1  a {
+    text-decoration: underline;
+}
+.footer-rinfo2  a {
+    text-decoration: underline;
 }
 
 .site-info a {
@@ -2485,7 +2540,10 @@ Responsive grid for pages
   border: 1px solid black;
   padding: 10px;  
 }
-
+.ctblcontents2 {
+  border: 1px solid black;
+  padding: 3px;  
+}
 .tblcontents {
   width: 100%;
   border-collapse: collapse;
